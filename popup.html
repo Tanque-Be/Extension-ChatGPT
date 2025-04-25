@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guardar conversación</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    label { display: block; margin-bottom: 8px; }
+    input[type="checkbox"] { margin-right: 6px; }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #10a37f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { background-color: #0d8c63; }
+  </style>
+</head>
+<body>
+  <h2>Prompt seleccionado:</h2>
+  <p id="selectedPrompt">Cargando...</p>
+
+  <h3>Respuestas para guardar:</h3>
+  <form id="responsesForm"></form>
+
+  <button id="saveBtn">💾 Guardar selección</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
